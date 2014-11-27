@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+    	<head>
+    		<meta charset="UTF-8">
+    		<title>MarionetteApp</title>
+    		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    		<link rel="stylesheet" href="css/MarionetteApp.css">
+    		<script src="js/libs/jquery/jquery-min.js"></script>
+ 		    <script>
+ 		   appInitDeferred = $.Deferred();
+				init = function() {
+					$(document).ready(function(){
+						appInitDeferred.resolve();
+					});
+				};
+			</script>
+    	</head>
+    	<body onload="init();" id="content" style="display: block;">
+   		  	<div class="layout-container"></div>
+			<div class="modal-container"></div>
+			<div class="alert-container"></div>
+    		<script data-main="js/main" src="js/libs/require/require.js"></script>
+    		<script src="js/MarionetteApp.js"></script>
+    	</body>
+</html>

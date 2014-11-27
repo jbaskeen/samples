@@ -1,0 +1,39 @@
+html, body, .layout-container {
+  height: 100%;
+}
+
+body {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center bottom;
+  background-attachment: fixed;
+}
+
+/* Changing Foundation styles */
+.button, button {
+	background-color: @gray-dark;
+	border-radius: 3px;
+	padding: 10px;
+	color: #FFFFFF;
+	text-align: center;
+	border: none;
+	&:active {
+		background-color: @gray-verydark;
+	}
+}
+
+.reveal-modal {
+	font-size: 0.8em;
+	line-height: 1.2em;
+	.message {
+		margin-bottom: 15px;
+	}
+	.button, button {
+		display: block;
+		margin-top: 5px;
+		padding: 15px 10px;
+	}
+}
+/* End Foundation styles */

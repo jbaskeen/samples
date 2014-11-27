@@ -1,0 +1,3 @@
+function wlCommonInit(){
+    appWLDeferred.resolve();
+}

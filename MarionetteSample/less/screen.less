@@ -1,0 +1,29 @@
+/* Main Less file. */
+
+@import "../css/normalize.css";
+@import "../css/foundation.min.css";
+@import "lesshat.less"; /* LESS Hat provides helpful css mixins */
+
+@import "_base.less";
+
+/* utility styles */
+
+
+/* Make float parent clear itself */
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+
+
+.pull-left {
+	float: left;
+}
+
